@@ -10,7 +10,10 @@ public class SozialApplication {
 		SpringApplication.run(SozialApplication.class, args);
 	}
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 59c9e6d57498fa95afedc271903fd34e6b0da23d
 }

@@ -1,5 +1,6 @@
 package com.projekt.sozial.entity;
 
+<<<<<<< HEAD
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -61,4 +62,22 @@ public class User {
 	public void setAvatar(int avatar) {
 		this.avatar = avatar;
 	}
+=======
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Table(name = "user")
+@Data
+public class User {
+
+	@Id
+	Long id;
+	String userName;
+	String password;
+
+>>>>>>> 59c9e6d57498fa95afedc271903fd34e6b0da23d
 }
