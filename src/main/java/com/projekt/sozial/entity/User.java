@@ -18,8 +18,6 @@ import javax.persistence.Table;
 @Table(name = "user")
 
 @Data
-
-
 public class User {
 
 	@Id
