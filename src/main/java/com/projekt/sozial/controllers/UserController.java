@@ -23,6 +23,7 @@ public class UserController {
 
 	private UserRepository userRepository;
 
+	//Constructor Injektion oder @Autowired auch möglich
 	private UserController(UserRepository userRepository) {
 		this.userRepository = userRepository;
 
@@ -56,8 +57,6 @@ public class UserController {
 			foundUser.setUserName(newUser.getUserName());
 			foundUser.setPassword(newUser.getPassword());
 			userRepository.save(foundUser);
-
-
 			return foundUser;
 		} else {
 			return null;
